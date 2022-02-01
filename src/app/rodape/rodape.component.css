@@ -1,0 +1,40 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+ul li {
+    display: inline;
+    margin: 0 0 -15px 0;
+}
+
+.fab {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.fa-facebook-square,
+.fa-instagram {
+    color: #673d3e;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    text-transform: uppercase;
+    background: rgb(81, 91, 212);
+    background: linear-gradient(
+        188deg,
+        rgba(81, 91, 212, 1) 10%,
+        rgba(129, 52, 255, 1) 22%,
+        rgba(221, 42, 123, 1) 55%,
+        rgba(254, 218, 119, 1) 85%,
+        rgba(245, 133, 41, 1) 91%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
