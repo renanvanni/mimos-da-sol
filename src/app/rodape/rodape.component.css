@@ -14,13 +14,13 @@ ul li {
     padding: 10px;
 }
 
-.fa-facebook-square,
-.fa-instagram {
-    color: #673d3e;
+.fa-whatsapp,
+.fa-instagram, .textoFont {
+    color: #654b4a;
 }
 
-.fa-facebook-square:hover {
-    color: #3b5998;
+.fa-whatsapp:hover {
+    color: #34af23;
 }
 
 .fa-instagram:hover {
@@ -37,4 +37,8 @@ ul li {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.rodape {
+    background-color: #f7fffe !important;
 }

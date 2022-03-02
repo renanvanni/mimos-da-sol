@@ -1,0 +1,62 @@
+.comprarAgora {
+    border-radius: 10px;
+    border: 1px solid #654b4a;
+    font-size: 16px;
+    height: 50px;
+    width: 160px;
+    background-color: #654b4a;
+    color: white;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.comprarAgora:hover {
+    background-color: #9b828500;
+    color: #654b4a;
+}
+
+.corWhatsApp {
+    background: #48ab9c;
+    border-radius: 10px;
+    border: 1px solid #48ab9c;
+    height: 40px;
+}
+
+.corWhatsApp:hover {
+    background: #a7bfbb;
+    color: #654b4a;
+    border: 1px solid #9b8285;
+}
+
+.font-nome-produto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0 0 0;
+    color: #654b4a;
+    font-weight: bolder;
+    font-size: 22px;
+    margin: 10px 0 0 10px;
+}
+
+.font-preco {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #48ab9c;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0 10px;
+}
+
+.sub-titulos {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #654b4a;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.font-explicacoes {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #654b4a;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 10px;
+}

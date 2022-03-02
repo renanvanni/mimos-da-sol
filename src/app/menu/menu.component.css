@@ -1,5 +1,12 @@
+.tamanhoMenu {
+    margin: 0 20px 0 20px;
+    border-radius: 0 0 30px 30px;
+    background-color: #f7fffe !important;
+    box-shadow: 4px 4px 40px #654b4a;
+}
+
 .logoPrincipal {
-    height: 65px;
+    height: 50px;
     width: 65px;
     border-radius: 50%;
 }
@@ -20,11 +27,11 @@
 .fontMenu {
     font-size: 16px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #673d3e !important;
+    color: #654b4a !important;
     font-weight: bold;
 }
 
 .fontMenu:hover {
-    transition: .4s;
-    color: #b0d5cb !important;
+    transition: .2s;
+    color: #48ab9c !important;
 }

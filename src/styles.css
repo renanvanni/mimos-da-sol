@@ -4,5 +4,68 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .textoFont {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #654b4a;
+}
+
+body {
+    background-image: url("../src/assets/img/photo1646160997.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f7fffe;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #654b4a;
+    border-radius: 20px;
+}
+
+@media (max-width: 1023px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body::-webkit-scrollbar-track {
+        display: none;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        display: none;
+        background-color: #48ab9c;
+        border-radius: 20px;
+        border: 1px solid #654b4a;
+    }
+}
+
+.margemParaOMenu {
+    margin: 90px 10px 0 10px;
+    background-color: #f7f7f7cc;
+    border-radius: 10px;
+}
+
+.posicaoFoto {
+    overflow: hidden;
+    width: 800px;
+    height: 1100px;
+    margin: -100px auto;
+}
+
+@media (max-width: 767px) {
+    .posicaoFoto {
+        overflow: none;
+        width: auto;
+        height: auto;
+        margin: none;
+    }
 }
