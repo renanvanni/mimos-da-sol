@@ -41,3 +41,13 @@
 .cliqueAqui:hover {
     color: #48ab9c;
 }
+
+.teste {
+    background-image: url("../../assets/img/itens-catalogo/photo1644344376.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    height: 400px;
+}

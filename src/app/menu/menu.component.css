@@ -12,8 +12,7 @@
 }
 
 .botoesMenu {
-    justify-content: center;
-    margin: 0 0 0 -65px;
+    justify-content: flex-end;
 }
 
 @media (max-width: 990px) {
@@ -34,4 +33,8 @@
 .fontMenu:hover {
     transition: .2s;
     color: #48ab9c !important;
+}
+
+.imagemEscrita {
+    max-width: 100px;
 }
