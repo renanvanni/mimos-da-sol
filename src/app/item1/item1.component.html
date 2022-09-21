@@ -2,22 +2,10 @@
     <div class="row">
         <div class="col-md-7">
             <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item" *ngFor="let picture of exemplomodel.url; let i = index;" [ngClass]="{'active': i === 0}">
                         <div class="posicaoFoto">
-                            <img src="../../assets/img/itens-catalogo/msg541852549-25302.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="posicaoFoto">
-                            <img src="../../assets/img/itens-catalogo/msg541852549-25303.jpg" class="d-block w-100"
+                            <img [src]="picture" class="d-block w-100"
                                 alt="...">
                         </div>
                     </div>
@@ -36,17 +24,17 @@
         </div>
 
         <div class="col-md-5">
-            <h2 class="font-nome-produto">Nome do produto</h2>
-            <h1 class="font-preco">R$ 20,00</h1>
+            <h2 class="font-nome-produto">{{ exemplomodel.nomeProduto }}</h2>
+            <h1 class="font-preco">R$ {{ exemplomodel.preco }}</h1>
             <br>
-            <h3 class="sub-titulos">Descrição do produto:</h3>
-            <p class="font-explicacoes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic iusto itaque
-                saepe quod, excepturi
-                voluptatum, dignissimos aspernatur consequuntur cum magni eligendi. Voluptas asperiores reiciendis porro
-                culpa dolorem eius alias!</p>
+            <h3 class="sub-titulos">Cuidados com o seu mimo:</h3>
+            <p class="font-explicacoes">Lavar em água temperatura ambiente e com sabão neutro, não expor a alvejante e não utilizar secadora.</p>
+            <p class="font-explicacoes mt-2">Passar a ferro do avesso e em temperatura algodão.</p>
+            <p class="font-explicacoes mt-2">* Estampas escuras ou fortes, lavar separadamente nas primeiras lavadas.</p>
+            <p class="font-explicacoes mt-2">Enviamos pelo correio em até 5 dias úteis após confirmação do pagamento</p>
             <br>
             <h3 class="sub-titulos">Tamanho:</h3>
-            <p class="font-explicacoes">25.2 cm x 50 cm</p>
+            <p class="font-explicacoes">{{ exemplomodel.tamanho }}</p>
             <br>
             <button class="comprarAgora" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <span>COMPRE AGORA</span>
@@ -65,11 +53,10 @@
             <div class="modal-body">
                 <h2>Como todos os nossos produtos são feitos a <span style="color: #48ab9c;">mão</span>, <span
                         style="color: #48ab9c;">sob encomenda</span> e com todo o <span
-                        style="color: #48ab9c;">carinho</span>. Pedimos para você
-                    entrar em contato conosco atráves do botão a baixo, nos informando o <span
-                        style="color: #9b8285;">tamanho</span>
-                    desejado, a <span style="color: #9b8285;">cor</span> e até algum <span
-                        style="color: #9b8285;">detalhe especial</span> para você!</h2>
+                        style="color: #48ab9c;">carinho</span>, pedimos para você
+                    entrar em contato conosco atráves do botão a baixo, nos informe a <span
+                        style="color: #9b8285;">estampa</span>
+                    desejada ou até algum <span style="color: #9b8285;">detalhe especial</span>".</h2>
             </div>
             <div class="d-flex justify-content-center" style="margin: 0 0 15px 0;">
                 <a type="button" class="btn btn-success corWhatsApp mb-3"

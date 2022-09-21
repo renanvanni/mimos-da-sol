@@ -1,23 +1,46 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light tamanhoMenu">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="../../assets/img/logo_menor.jpeg" alt="" class="logoPrincipal">
-            Mimos da Sol
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" data-bs-dismiss="navbarTogglerDemo"
-            aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mt-2 mb-3" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse botoesMenu" id="navbarTogglerDemo">
-            <ul class="navbar-nav">
-                <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="collapsible" (click)="abreSobreFoto()"
+                matTooltip="Clique aqui e saiba mais sobre nós!">
+                <img src="../../assets/img/logo_menor.jpeg" alt="" class="picture">
+                </button>
+                <div class="content" *ngIf="abreOSobre">
+                    <p class="mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis, impedit vero sint et magni
+                        harum fugit earum natus, totam quae nostrum excepturi voluptates dolorum cum reiciendis provident,
+                        voluptas aliquam?
+                    </p>
+                    <ul class="mb-4 d-flex justify-content-around">
+                        <a class="d-flex align-items-center" href="https://api.whatsapp.com/send?phone=+5511987890211"
+                            target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="fontContactsList">(11) 98789-0211</span>
+                        </a>
+                        <a class="d-flex align-items-center" href="https://www.instagram.com/mimosdasol.atelier/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span class="fontContactsList">@mimosdasol.atelier</span>
+                        </a>
+                        <a class="d-flex align-items-center">
+                            <i class="far fa-envelope"></i>
+                            <span class="fontContactsList">solange@email.com</span>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="navbar-nav botoesMenu">
+                <li class="nav-item mt-lg-3 mb-lg-3">
                     <a class="nav-link active fontMenu" aria-current="page" routerLink="/home">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-lg-3 mt-lg-3">
                     <a class="nav-link fontMenu" routerLink="/catalogo">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fontMenu" routerLink="/sobre">Sobre</a>
                 </li>
             </ul>
         </div>

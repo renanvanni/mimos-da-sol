@@ -11,11 +11,6 @@
     border-radius: 50%;
 }
 
-.botoesMenu {
-    justify-content: center;
-    margin: 0 0 0 -65px;
-}
-
 @media (max-width: 990px) {
     .botoesMenu {
         margin: 0 10px 0 0;
@@ -34,4 +29,105 @@
 .fontMenu:hover {
     transition: .2s;
     color: #48ab9c !important;
+}
+
+.collapsible {
+    background-color: #777;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    max-height: 135px;
+    max-width: 135px;
+    border-radius: 50%;
+    position: absolute;
+    right: 47%;
+    top: 5%;
+    padding: 0px !important;
+}
+
+.content {
+    padding: 0 18px;
+    background-color: #fffffff0;
+    position: absolute;
+    top: 90px;
+    left: 1px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: -5;
+    animation: moveToBotton 0.3s ease-in;
+}
+
+
+@keyframes moveToBotton {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.picture {
+    width: 100%;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-whatsapp {
+    font-size: 30px;
+    color: #34af23;
+    cursor: pointer;
+}
+
+.fa-instagram {
+    font-size: 30px;
+    text-transform: uppercase;
+    background: rgb(81, 91, 212);
+    background: linear-gradient(
+        188deg,
+        rgba(81, 91, 212, 1) 10%,
+        rgba(129, 52, 255, 1) 22%,
+        rgba(221, 42, 123, 1) 55%,
+        rgba(254, 218, 119, 1) 85%,
+        rgba(245, 133, 41, 1) 91%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.fa-envelope {
+    font-size: 30px;
+    color: #f14436;
+    cursor: pointer;
+}
+
+.fontContactsList {
+    margin: 0 0 0 7px;
+    color: #654b4a;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 979px) {
+    .collapsible {
+        margin: 0 -6% 0 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .collapsible {
+        margin: 0 -13% 0 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .content {
+        top: 155px;
+    }
 }

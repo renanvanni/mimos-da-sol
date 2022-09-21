@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  abreOSobre = false;
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() { }
 
+  abreSobreFoto() {
+    this.abreOSobre ? this.abreOSobre = false : this.abreOSobre = true;
+  }
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Produto } from '../models/Produto.model';
 
 @Component({
   selector: 'app-item1',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Item1Component implements OnInit {
 
-  constructor() { }
+  public exemplomodel: Produto = new Produto();
+
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
     window.scroll(0, 0);
+    this.route.queryParams.subscribe(params => {
+      if (params) {
+        this.exemplomodel.nomeProduto = params['nomeProduto'];
+        this.exemplomodel.preco = params['preco'];
+        this.exemplomodel.url = params['url'];
+        this.exemplomodel.tamanho = params['tamanho'];
+      }
+    });
   }
 
 }
