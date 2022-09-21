@@ -6,6 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .textoFont {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #654b4a;
+    margin: 9px !important;
 }
 
 body {
@@ -57,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 .posicaoFoto {
     overflow: hidden;
     width: 800px;
-    height: 1100px;
+    height: 750px;
     margin: -100px auto;
 }
 

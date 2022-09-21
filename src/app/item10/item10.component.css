@@ -59,19 +59,3 @@
     font-size: 16px;
     margin: 0 10px;
 }
-
-.posicaoFoto {
-    overflow: hidden;
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-    .posicaoFoto {
-        overflow: none;
-        width: auto;
-        height: auto;
-        margin: none;
-    }
-}

@@ -63,8 +63,8 @@
 .posicaoFoto {
     overflow: hidden;
     width: 800px;
-    height: 600px;
-    margin: 0 auto;
+    height: 1100px;
+    margin: -100px auto;
 }
 
 @media (max-width: 767px) {
